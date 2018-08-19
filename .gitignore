@@ -5,3 +5,6 @@
 # package manager
 elpa
 games
+
+# projectile
+projectile-bookmarks.eld
