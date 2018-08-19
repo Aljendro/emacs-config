@@ -23,7 +23,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (projectile monokai-theme zenburn-theme solarized-theme helm avy rainbow-delimiters clojure-mode))))
+    (use-package projectile monokai-theme zenburn-theme solarized-theme helm avy rainbow-delimiters clojure-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

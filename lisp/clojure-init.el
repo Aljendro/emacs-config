@@ -14,7 +14,7 @@
   (add-hook 'cider-repl-mode-hook #'company-mode)
   (add-hook 'cider-mode-hook #'company-mode)
   (add-hook 'cider-mode-hook #'smartparens-strict-mode)
-  (add-hook 'cider-repl-mode-hook #'smartparens-mode))
+  (add-hook 'cider-repl-mode-hook #'smartparens-strict-mode))
 
 (provide 'clojure-init)
 
