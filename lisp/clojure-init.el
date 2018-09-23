@@ -20,7 +20,12 @@
 	    (lambda ()
 		(clj-refactor-mode 1)
 		;; This choice of keybinding leaves cider-macroexpand-1 unbound
-		(cljr-add-keybindings-with-prefix "C-c C-m"))))
+		(cljr-add-keybindings-with-prefix "C-c C-m")))
+  (setq cider-cljs-lein-repl
+	"(do (require 'figwheel-sidecar.repl-api)
+         (figwheel-sidecar.repl-api/start-figwheel!)
+         (figwheel-sidecar.repl-api/cljs-repl))"))
+
 
 (provide 'clojure-init)
 
