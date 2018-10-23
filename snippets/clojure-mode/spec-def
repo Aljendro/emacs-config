@@ -1,0 +1,5 @@
+# name: spec def
+# key: specd
+# --
+(spec/def ::$1
+  $0)$>

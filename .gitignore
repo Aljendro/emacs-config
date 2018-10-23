@@ -8,3 +8,6 @@ games
 
 # projectile
 projectile-bookmarks.eld
+
+# cache
+*.cache
