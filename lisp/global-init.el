@@ -15,10 +15,10 @@ re-downloaded in order to locate PACKAGE."
   (if (package-installed-p package min-version)
       t
     (if (or (assoc package package-archive-contents) no-refresh)
-        (if (boundp 'package-selected-packages)
-            ;; Record this as a package the user installed explicitly
-            (package-install package nil)
-          (package-install package))
+      (if (boundp 'package-selected-packages)
+        ;; Record this as a package the user installed explicitly
+        (package-install package nil)
+        (package-install package))
       (progn
         (package-refresh-contents)
         (require-package package min-version t)))))
@@ -37,6 +37,7 @@ locate PACKAGE."
      nil)))
 
 ;; Global settings
+(setq visible-bell t)
 (set-face-attribute 'default nil :height 150) ;; Font size
 (load-theme 'monokai t)
 (global-display-line-numbers-mode)

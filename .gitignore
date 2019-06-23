@@ -11,3 +11,5 @@ projectile-bookmarks.eld
 
 # cache
 *.cache
+
+/url/
