@@ -13,3 +13,6 @@ projectile-bookmarks.eld
 *.cache
 
 /url/
+
+# emacs save files
+/saves

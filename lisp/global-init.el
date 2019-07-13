@@ -41,6 +41,13 @@ locate PACKAGE."
 (set-face-attribute 'default nil :height 150) ;; Font size
 (load-theme 'monokai t)
 (global-display-line-numbers-mode)
+(setq
+   backup-by-copying t ;; don't clobber symlinks
+   backup-directory-alist '(("." . "~/.emacs.d/saves/")) ;; save inside of .emacs.d
+   delete-old-versions t
+   kept-new-versions 6
+   kept-old-versions 2
+   version-control nil) ;; don't version backups, files already vc'ed
 
 ;; Turn on global packages
 (when (maybe-require-package 'use-package))
