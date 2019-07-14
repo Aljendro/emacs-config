@@ -60,7 +60,7 @@ locate PACKAGE."
   (setq neo-smart-open t))
 
 (when (maybe-require-package 'avy)
-  (global-set-key (kbd "s-2") 'avy-goto-char))
+  (global-set-key (kbd "s-s") 'avy-goto-char))
 
 (when (maybe-require-package 'helm)
   (global-set-key (kbd "M-x") #'helm-M-x)
