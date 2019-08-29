@@ -37,6 +37,7 @@ locate PACKAGE."
      nil)))
 
 ;; Global settings
+(setq-default truncate-lines 1)
 (setq visible-bell t)
 (set-face-attribute 'default nil :height 150) ;; Font size
 (load-theme 'monokai t)
